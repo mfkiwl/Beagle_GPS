@@ -25,7 +25,6 @@ Also possibly of interest: Before the KiwiSDR project started, a terminal based 
 [here](http://www.jks.com/sdgps/sdgps.html). It uses a commercial FPGA development board, BeagleBone Black and also contains a C-code software simulation of the
 Verilog portions of the design.
 
-<br>
 [![KiwiSDR](http://www.kiwisdr.com/ks/GPS.1.780px.jpg)](http://www.kiwisdr.com/ks/GPS.1.jpg)
 
 [end-of-document]
