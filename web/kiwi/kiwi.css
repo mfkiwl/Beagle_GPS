@@ -1,0 +1,273 @@
+/* Copyright (c) 2016 John Seamons, ZL/KF6VO */
+
+hr
+{
+    border-top: 1px solid #ddd;
+}
+
+#id-kiwi-msg-container
+{
+	display: none;
+}
+
+#id-kiwi-msg-logo-container
+{
+	position: relative;
+	height: 80px;
+	margin-top: 15px;
+}
+
+#id-left-logo
+{
+	position: absolute;
+	top: 0px;
+	left: 15px;
+}
+
+#id-left-logo-text
+{
+	position: absolute;
+	bottom: 2pt;
+	left: 54px;
+	font-size: 8pt;
+	color: #909090;
+}
+
+#id-kiwi-msg
+{
+	position: relative;
+	float: left;	/* so background width tracks rendered text */
+	/*background-color: lightSteelBlue;*/
+	background-color: #ccffff;
+	padding: 10px;
+	margin: 15px;
+	color: black;
+	font-size: 14pt;
+	border-radius: 15px;
+	-moz-border-radius: 15px;
+}
+
+#id-kiwi-container
+{
+	display: none;
+	/* better not default to auto if our children expect to do height:100% to get full screen height */
+	height: inherit;
+}
+
+#id-log-not-shown
+{
+	background-color: yellow;
+}
+
+
+#id-time-display-logo-inner
+{
+	opacity: 0;
+	transition: opacity 1s linear;
+}
+
+#id-time-display-logo
+{
+	position: absolute;
+	top: 22px;
+	right: 15px;
+}
+
+#id-time-display-logo-text
+{
+	position: absolute;
+	top: 2pt;
+	right: 15px;
+	font-size: 10pt;
+	color: #909090;
+	width: 200px;
+	text-align: center;
+}
+
+#id-time-display-inner
+{
+	transition: opacity 1s linear;
+}
+
+#id-time-display-text-inner
+{
+	position: absolute;
+	top: 1pt;
+	right: 0px;
+	font-size: 10pt;
+	color: black;
+	width: 200px;
+	text-align: left;
+	/*background: cyan;	/* debug */
+}
+
+.id-time-display-UTC, .id-time-display-local
+{
+	display: inline-block;
+	font-size: 14pt;
+	font-weight: bold;
+	color: #909090;
+}
+
+.cl-time-display-text-suffix
+{
+	display: inline-block;
+	margin-left: 0.5em;
+	color: #909090;
+}
+
+.id-time-display-tzname
+{
+	font-size: 8pt;
+	color: #909090;
+	/*background: cyan;	/* debug */
+}
+
+.cl-tbar-bbox
+{
+    position: absolute;
+	opacity: 0.3;
+}
+
+
+/* appearing in class="..." even though "id-..." */
+
+/*
+	w3-sidenav is a fixed element (by default), so it stays put if other page content scrolls.
+	So can't use w3_col_percent for side-by-side placement. Do this width / margin-left hack instead.
+*/
+
+.id-admin-ext
+{
+}
+
+.id-admin-ext-nav
+{
+	width: 8%;
+}
+
+.id-admin-ext-config
+{
+	margin-left: 10%;
+}
+
+.cl-admin-check
+{
+	padding: 0px 10px;
+}
+
+/* override the w3-sidenav select/hover styles */
+.id-admin-nav-dom > .w3-current, .id-admin-nav-dom > .w3-current:hover
+{
+    color: white;
+    background-color: #4CAF50;
+    font-weight: bold;
+}
+
+.class-dx-panel
+{
+	color: yellow;
+	overflow: hidden;
+}
+
+.class-mfg-panel
+{
+	visibility: hidden;
+	width: 50%;
+	height: 100%;
+	overflow: scroll;
+	margin: 10px;
+	background-color: #575757;
+	padding: 10px;
+	color: white;
+	font-size: 85%;
+	border-radius: 15px;
+	-moz-border-radius: 15px;
+}
+
+.class-mfg-status
+{
+	display: inline-block;
+	background-color: #b3b3b3;
+	overflow: scroll;
+	width: 100%;
+	height: 100%;
+	max-height: 250px;
+	padding: 10px;
+	margin: 5px;
+}
+
+.class-mfg-button
+{
+	display: inline-block;
+	color: black;
+	background-color: #e6ccff;
+	padding: 10px;
+	margin: 5px;
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+}
+
+.class-sd-status
+{
+	font-size: 12pt;
+	font-weight: bold;
+	padding-left: 16px;
+}
+
+/* Tooltip container, from: www.w3schools.com/howto/howto_css_tooltip.asp */
+.class-tooltip {
+    display: inline-block;
+}
+
+/* Tooltip text */
+.class-tooltip .class-tooltip-text {
+	visibility: hidden;
+    width: 150px;
+    background-color: #555;
+    color: white;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+
+    /* Position the tooltip text */
+    position: absolute;
+    margin-left: -75px;
+
+    /* Fade in tooltip */
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+/* Tooltip arrow */
+.class-tooltip .class-tooltip-text::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.class-tooltip:hover .class-tooltip-text {
+    visibility: visible;
+    opacity: 1;
+}
+
+.kiwi-dbg
+{
+	border: 1px solid red;		/* debug */
+}
+
+.kiwi-dbg2
+{
+	border: 1px solid blue;		/* debug */
+}
+
+.kiwi-dbg3
+{
+	border: 1px solid lime;		/* debug */
+}

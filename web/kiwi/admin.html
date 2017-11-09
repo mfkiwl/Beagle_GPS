@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+
+<!-- Copyright (c) 2014-2016 John Seamons, ZL/KF6VO -->
+
+<html>
+	<head>
+		<title>KiwiSDR admin interface</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset="utf-8">
+
+		<link rel="stylesheet" type="text/css" href="pkgs/w3.css" />
+		<link rel="stylesheet" type="text/css" href="kiwi/w3_ext.css" />
+		<link rel="stylesheet" type="text/css" href="kiwi/kiwi.css" />
+		<link rel="stylesheet" type="text/css" href="pkgs/font-awesome-4.6.3/css/font-awesome.min.css">
+
+		<script type="text/javascript">
+			/* must be before inclusion of any .js files below */
+			var kiwi_check_js_version = [];
+		</script>
+		
+		<script src="config/config.js"></script>
+		<script src="kiwi/kiwi_util.js"></script>
+		<script src="kiwi/kiwi.js"></script>
+		<script src="kiwi/w3_util.js"></script>
+		<script src="extensions/ext.js"></script>
+		<script src="admin.js"></script>
+
+		<!-- extensions are here because admin config parameters must be loaded from them -->
+		%[EXT_LIST_JS]
+	</head>
+
+	<body>
+		<div id="id-kiwi-msg-container">
+            <div id="id-kiwi-msg-logo-container">
+                <a href="http://bluebison.net" target="_blank"><img id="id-left-logo" src="gfx/kiwi-with-headphones.51x67.png" /></a>
+                <div id="id-left-logo-text"><a href="http://bluebison.net" target="_blank">&copy; bluebison.net</a></div>
+            </div>
+			<div id="id-kiwi-msg"></div>
+		</div>
+
+		<div id="id-kiwi-container" data-type="admin" class="w3-container" style="display:none">
+			<div id="id-admin" class="w3-container"></div>
+		</div>
+	</body>
+</html>
